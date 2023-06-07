@@ -26,5 +26,6 @@ export const tours = [
     {
       "id": 5,
       "title": "Ndere Island Adventure",
-      "content": "Set sail to Ndere Island National Park or embark on a thrilling fishing trip around the archipelago of smaller islands. Enjoy the pristine beauty of the island, witness diverse wildlife, and engage in exciting water activities. Experience the
-  
+      "content": "Set sail to Ndere Island National Park or embark on a thrilling fishing trip around the archipelago of smaller islands. Enjoy the pristine beauty of the island, witness diverse wildlife, and engage in exciting water activities.",
+    }
+]

@@ -1,0 +1,61 @@
+.about .heading {
+    background: url(../../imgs/header-bg-1.png) no-repeat;
+}
+
+.about .img-container {
+    position: relative;
+    aspect-ratio: 3/2;
+    flex: 1 1 41rem;
+}
+
+.about .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about article {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about article h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about article p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about article .icons-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.about article .icons-container .icons {
+    background: var(--light-bg);
+    padding: 2rem;
+    flex: 1 1 16rem;
+}
+
+.about article .icons-container .icons svg {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.about article .icons-container .icons span {
+    margin-bottom: 1rem;
+    color: var(--light-black);
+    display: block;
+}
+

@@ -1,0 +1,33 @@
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about .img-container{
+    position: relative;
+    flex: 1 1 41rem;
+    /* margin: 0 auto; */
+    aspect-ratio: 3/2;
+    max-width: 700px;
+}
+
+.home-about article{
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-bg);
+}
+
+.home-about article h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home-about article p{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+
+
