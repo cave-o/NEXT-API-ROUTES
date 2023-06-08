@@ -1,0 +1,70 @@
+.home-package {
+    background: var(--light-bg);
+}
+
+.home-package .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.home-package .img-container {
+    position: relative;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+}
+
+.home-package .img-container img {
+    transition: 1s;
+}
+
+.home-package .box:hover .img-container img {
+    transform: scale(1.1);
+}
+
+.heading-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home-package article {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-package article h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.home-package article p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home-package .box{
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.home-package article .btn{
+    position: absolute;
+    bottom: 17px;
+    left: calc(50% - 7.1rem);
+}
+
+.home-package .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+.home-package .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}

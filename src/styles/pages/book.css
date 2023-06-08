@@ -1,0 +1,11 @@
+.book .heading {
+    background: url(../../imgs/header-bg-3.png) no-repeat;
+}
+
+.book .heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}

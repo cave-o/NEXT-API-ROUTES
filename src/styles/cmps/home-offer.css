@@ -1,0 +1,21 @@
+.home-offer {
+    text-align: center;
+}
+
+.home-offer article {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.home-offer article h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home-offer article p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}

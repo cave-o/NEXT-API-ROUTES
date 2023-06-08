@@ -1,0 +1,42 @@
+.book .book-form {
+    padding: 2rem;
+    background: var(--light-bg);
+    margin: 5rem 10%;
+}
+
+.book .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.book .book-form .input-box {
+    flex: 1 1 41rem;
+}
+
+.book .book-form .input-box input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.book .book-form .input-box input:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.book .book-form .input-box input:focus::placeholder {
+    color: var(--light-white);
+}
+
+.book .book-form .input-box span {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+.book .book-form .btn {
+    margin-top: 2rem;
+}
