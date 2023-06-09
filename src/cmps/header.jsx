@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -15,36 +14,48 @@ function Header() {
 
   return (
     <header className="header">
-      <Link href="/home-page" passHref>
-        <a className="logo">gopiny.</a>
+      <Link href="/" passHref>
+        <span className="logo">gopiny.</span>
       </Link>
-      <nav className={`navbar ${isMenuOpen && "open"}`}>
-        <Link href="/home-page" legacyBehavior>
-          <a className={getClassName("home")} onClick={() => setIsActive("home")}>
-            Home
-          </a>
+      <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+        <Link
+          href="/"
+          passHref
+          className={getClassName("home")}
+          onClick={() => setIsActive("home")}
+        >
+          Home
         </Link>
-        <Link href="/tours" legacyBehavior> 
-          <a className={getClassName("package")} onClick={() => setIsActive("package")}>
-            Package
-          </a>
+        <Link
+          href="/tours"
+          passHref
+          className={getClassName("package")}
+          onClick={() => setIsActive("package")}
+        >
+          Package
         </Link>
-        <Link href="/book" legacyBehavior>
-          <a className={getClassName("book")} onClick={() => setIsActive("book")}>
-            Book
-          </a>
+        <Link
+          href="/book"
+          passHref
+          className={getClassName("book")}
+          onClick={() => setIsActive("book")}
+        >
+          Book
         </Link>
-        <Link href="/about" legacyBehavior>
-          <a className={getClassName("about")} onClick={() => setIsActive("about")}>
-            About
-          </a>
+        <Link
+          href="/about"
+          passHref
+          className={getClassName("about")}
+          onClick={() => setIsActive("about")}
+        >
+          About
         </Link>
       </nav>
       <FontAwesomeIcon
-        className={`menu-btn ${isMenuOpen && "open"}`}
+        className={`menu-btn ${isMenuOpen ? "open" : ""}`}
         icon={isMenuOpen ? faTimes : faBars}
         onClick={() => setIsMenuOpen((prevState) => !prevState)}
-      ></FontAwesomeIcon>
+      />
     </header>
   );
 }
