@@ -1,5 +1,12 @@
 const BASE_URL = '/api';
 
+interface Review {
+  id: string;
+  title: string;
+  rating: number;
+  // Add other properties as needed
+}
+
 export const reviewService = {
   query,
   add,
@@ -36,7 +43,7 @@ async function add(review: Review): Promise<Review> {
     return addedReview;
   } catch (err) {
     console.error('Error adding review:', err);
-    return null;
+    throw err; // Throw the error to indicate the failure
   }
 }
 
@@ -54,7 +61,7 @@ async function update(review: Review): Promise<Review> {
     return updatedReview;
   } catch (err) {
     console.error('Error updating review:', err);
-    return null;
+    throw err; // Throw the error to indicate the failure
   }
 }
 
@@ -66,5 +73,7 @@ async function remove(reviewId: string): Promise<void> {
     }
   } catch (err) {
     console.error('Error removing review:', err);
+    throw err; // Throw the error to indicate the failure
   }
 }
+

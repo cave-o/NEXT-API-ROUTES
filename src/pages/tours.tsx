@@ -1,24 +1,24 @@
-import PackageList from "@/cmps/package-list";
-import { packageService } from "@/services/package.service";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import TourList from "@/cmps/tour-list";
+import { tourService } from "@/services/tourService";
 
 function Tours() {
   const [shownCount, setShownCount] = useState(3);
-  const [packages, setPackages] = useState([]);
+  const [tour, setTour] = useState([]);
 
   useEffect(() => {
-    loadPackages();
-  }, [shownCount]);
-
-  async function loadPackages() {
-    try {
-      const filterBy = { amount: shownCount };
-      const packages = await packageService.query(filterBy);
-      setPackages(packages);
-    } catch (err) {
-      console.log("err:", err);
+    async function loadTour() {
+      try {
+        const allTours = await tourService.getAllTours();
+        const filteredTours = allTours.slice(0, shownCount);
+        setTour(filteredTours);
+      } catch (err) {
+        console.log("err:", err);
+      }
     }
-  }
+
+    loadTour();
+  }, [shownCount]);
 
   function onSetShownCount() {
     setShownCount((prevCount) => {
@@ -30,13 +30,9 @@ function Tours() {
   return (
     <div className="package">
       <div className="heading">
-        <h1>Packages</h1>
+        <h1>Tours</h1>
       </div>
-      <PackageList
-        packages={packages}
-        onSetShownCount={onSetShownCount}
-        shownCount={shownCount}
-      />
+      <TourList tours={tour} onSetShownCount={onSetShownCount} />
     </div>
   );
 }

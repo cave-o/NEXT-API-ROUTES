@@ -15,7 +15,7 @@ function HomePackage() {
                     <article>
                         <h3>Sunrise Cruise Package</h3>
                         <p>
-                        Witness the beauty of Lake Victoria's daybreak with a captivating sunrise cruise. Sail along calm waters, mingle with local fishermen, and marvel at the grazing hippos and soaring birds. Immerse yourself in the tranquility of the morning breeze while creating unforgettable memories.
+                        Witness the beauty of Lake Victoria&apos;s daybreak with a captivating sunrise cruise. Sail along calm waters, mingle with local fishermen, and marvel at the grazing hippos and soaring birds. Immerse yourself in the tranquility of the morning breeze while creating unforgettable memories.
                         </p>
                         <a href="/book" className="btn">book now</a>
                     </article>
@@ -39,7 +39,7 @@ function HomePackage() {
                     <article>
                         <h3>Ndere Island Adventure</h3>
                         <p>
-                        Set sail to Ndere Island National Park or embark on a thrilling fishing trip around the archipelago of smaller islands. Enjoy the pristine beauty of the island, witness diverse wildlife, and engage in exciting water activities. Experience the captivating allure of Lake Victoria's hidden gems.
+                        Set sail to Ndere Island National Park or embark on a thrilling fishing trip around the archipelago of smaller islands. Enjoy the pristine beauty of the island, witness diverse wildlife, and engage in exciting water activities. Experience the captivating allure of Lake Victoria&apos;s hidden gems.
                         </p>
                         <a href="/book" className="btn">book now</a>
                     </article>

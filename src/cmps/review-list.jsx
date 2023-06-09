@@ -54,7 +54,7 @@ function ReviewList({ reviews }) {
                 {/* {reviews.length && <ul className="box-container"> */}
                 {reviews.length && reviews.map(review => {
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={review.id}>
                             <ReviewPreview review={review} />
                         </SwiperSlide>
                     )
