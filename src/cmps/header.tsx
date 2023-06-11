@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 function Header() {
-  const [isActive, setIsActive] = useState(null);
+  const [isActive, setIsActive] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function getClassName(selectedLink: string | null) {

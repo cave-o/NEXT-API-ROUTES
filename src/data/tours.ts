@@ -3,13 +3,13 @@ export const tours = [
       "id": 1,
       "title": "Sunrise Cruise Package",
       "content": "Witness the beauty of Lake Victoria's daybreak with a captivating sunrise cruise. Sail along calm waters, mingle with local fishermen, and marvel at the grazing hippos and soaring birds. Immerse yourself in the tranquility of the morning breeze while creating unforgettable memories.",
-      "imgUrl": "/src/imgs/home-slide-2.jpg"
+      "imgUrl": "/src/imgs/boat.jpg"
     },
     {
       "id": 2,
       "title": "Kakamega Forest Exploration",
       "content": "Embark on a journey to Kakamega Forest, the remnants of a rainforest stretching from West Africa. Encounter diverse tree species, vibrant birdlife, and playful monkeys. Explore this enchanting forest and create lasting memories amidst its natural wonders.",
-      "imgUrl": "/src/imgs/home-slide-2.jpg"
+      "imgUrl": "/src/imgs/nature.jpg"
     },
     {
       "id": 3,

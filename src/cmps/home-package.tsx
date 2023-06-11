@@ -10,7 +10,7 @@ function HomePackage() {
             <div className="box-container">
                 <div className="box">
                     <div className="img-container">
-                        <Image fill src={img1} alt="" />
+                        <Image fill sizes="" src={img1} alt="" />
                     </div>
                     <article>
                         <h3>Sunrise Cruise Package</h3>
@@ -22,7 +22,7 @@ function HomePackage() {
                 </div>
                 <div className="box">
                     <div className="img-container">
-                        <Image fill src={img2} alt="" />
+                        <Image fill sizes="" src={img2} alt="" />
                     </div>
                     <article>
                         <h3>Kakamega Forest Exploration</h3>
@@ -34,7 +34,7 @@ function HomePackage() {
                 </div>
                 <div className="box">
                     <div className="img-container">
-                        <Image fill src={img3} alt="" />
+                        <Image fill sizes="" src={img3} alt="" />
                     </div>
                     <article>
                         <h3>Ndere Island Adventure</h3>
