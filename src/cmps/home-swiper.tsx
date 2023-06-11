@@ -1,4 +1,5 @@
 // import Swiper core and required modules
+import Link from 'next/link';
 import { Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,21 +26,27 @@ function HomeSwiper() {
                     <div className="slide">
                         <span>Gopiny - Discover the Essence of Lake Victoria</span>
                         <h3>Immerse Yourself in Unforgettable Adventures</h3>
-                        <a href="/package" className="btn">discover more</a>
+                        <Link href="/tours"
+               className="btn">discover more
+            </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide-2'>
                     <div className="slide">
                         <span>Gopiny - Unleash Your Spirit of Exploration</span>
                         <h3>Explore the Hidden Treasures of Kisumu</h3>
-                        <a href="/package" className="btn">discover more</a>
+                        <Link href="/tours"
+               className="btn">discover more
+            </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide-3'>
                     <div className="slide">
                         <span>Gopiny - Your Gateway to Extraordinary Experiences</span>
                         <h3>Embark on Memorable Journeys in Western Kenya</h3>
-                        <a href="/package" className="btn">discover more</a>
+                        <Link href="/tours"
+               className="btn">discover more
+            </Link>
                     </div>
                 </SwiperSlide>
 

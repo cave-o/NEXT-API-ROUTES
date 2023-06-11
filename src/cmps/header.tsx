@@ -7,7 +7,7 @@ function Header() {
   const [isActive, setIsActive] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  function getClassName(selectedLink) {
+  function getClassName(selectedLink: string | null) {
     if (isActive === selectedLink) return "active";
     else return "";
   }
@@ -32,7 +32,7 @@ function Header() {
           className={getClassName("package")}
           onClick={() => setIsActive("package")}
         >
-          Package
+          Tours
         </Link>
         <Link
           href="/book"
