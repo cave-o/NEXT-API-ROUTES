@@ -13,7 +13,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image'
 import ReviewPreview from './review-preview';
 
-function ReviewList({ reviews }) {
+interface IReviews {
+    stars: number;
+    content: string;
+    name: string;
+    description: string;
+    imgUrl: string;
+    id: number;
+  }
+
+  interface ReviewListProps {
+    reviews: IReviews[];
+    }
+
+
+function ReviewList({ reviews }: ReviewListProps) {
     return (
         <section className="reviews">
             <Swiper

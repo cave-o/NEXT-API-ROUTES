@@ -3,7 +3,20 @@ import Image from 'next/image'
 import { SwiperSlide } from 'swiper/react'
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 
-function ReviewPreview({ review }) {
+interface IReview {
+  stars: number;
+  content: string;
+  name: string;
+  description: string;
+  imgUrl: string;
+  id: number;
+}
+
+interface ReviewPreviewProps {
+  review: IReview;
+}
+
+export default function ReviewPreview({ review }: ReviewPreviewProps) {
   return (
     <SwiperSlide key={review.id}>
       <li className="slide">
@@ -23,4 +36,4 @@ function ReviewPreview({ review }) {
   );
 }
 
-export default ReviewPreview;
+
