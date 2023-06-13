@@ -1,7 +1,8 @@
-import img1 from "../imgs/img-1.jpg"
+import img1 from "../imgs/fam-boat-rides.jpg"
 import img2 from "../imgs/img-2.jpg"
-import img3 from "../imgs/img-3.jpg"
+import img3 from "../imgs/ndere-island.jpg"
 import Image from 'next/image'
+import Link from 'next/link';
 
 function HomePackage() {
     return (
@@ -17,7 +18,7 @@ function HomePackage() {
                         <p>
                         Witness the beauty of Lake Victoria&apos;s daybreak with a captivating sunrise cruise. Sail along calm waters, mingle with local fishermen, and marvel at the grazing hippos and soaring birds. Immerse yourself in the tranquility of the morning breeze while creating unforgettable memories.
                         </p>
-                        <a href="/book" className="btn">book now</a>
+                        <Link href="/book" className="btn">book now</Link>
                     </article>
                 </div>
                 <div className="box">
@@ -29,7 +30,7 @@ function HomePackage() {
                         <p>
                         Embark on a journey to Kakamega Forest, the remnants of a rainforest stretching from West Africa. Encounter diverse tree species, vibrant birdlife, and playful monkeys. Explore this enchanting forest and create lasting memories amidst its natural wonders.
                         </p>
-                        <a href="/book" className="btn">book now</a>
+                        <Link href="/book" className="btn">book now</Link>
                     </article>
                 </div>
                 <div className="box">
@@ -41,7 +42,7 @@ function HomePackage() {
                         <p>
                         Set sail to Ndere Island National Park or embark on a thrilling fishing trip around the archipelago of smaller islands. Enjoy the pristine beauty of the island, witness diverse wildlife, and engage in exciting water activities. Experience the captivating allure of Lake Victoria&apos;s hidden gems.
                         </p>
-                        <a href="/book" className="btn">book now</a>
+                        <Link href="/book" className="btn">book now</Link>
                     </article>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import { faFacebook} from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -16,8 +17,8 @@ function Footer() {
                 <h3>Quick Links</h3>
                 <a href="/home-page"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>Home</a>
                 <a href="/package"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>Package</a>
-                <a href="/book"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>Book</a>
-                <a href="/about"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>About</a>
+                <Link href="/book"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>Book</Link>
+                <Link href="/about"><FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>About</Link>
             </div>
             <div className="box">
                 <h3>Extra Links</h3>

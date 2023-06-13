@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ITour {
   id: number;
@@ -20,7 +21,7 @@ export default function TourPreview({ tour }: TourPreviewProps) {
       <article>
         <h3>{tour.title}</h3>
         <p>{tour.content}</p>
-        <a href="/book" className="btn">book now</a>
+        <Link href="/book" className="btn">book now</Link>
       </article>
     </li>
   );

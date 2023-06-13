@@ -1,13 +1,13 @@
 .home-swiper .swiper-slide-1 {
-    background: url(../../imgs/home-slide-1.jpg) no-repeat;
+    background: url(../../imgs/fam-boat-rides.jpg) no-repeat;
 }
 
 .home-swiper .swiper-slide-2 {
-    background: url(../../imgs/home-slide-2.jpg) no-repeat;
+    background: url(../../imgs/monkeyrocks.jpg) no-repeat;
 }
 
 .home-swiper .swiper-slide-3 {
-    background: url(../../imgs/home-slide-3.jpg) no-repeat;
+    background: url(../../imgs/kit-mikayi.jpg) no-repeat;
 }
 
 .home-swiper {
@@ -38,7 +38,7 @@
 .home-swiper .slide span {
     display: block;
     font-size: 3rem;
-    color: var(--light-white);
+    color: var(--black);
     padding-bottom: 1rem;
     animation: fadeIn .2s linear backwards .2s;
     -webkit-text-stroke: rgb(0, 0, 0) 0.5px;
