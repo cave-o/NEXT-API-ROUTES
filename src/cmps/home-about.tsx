@@ -1,5 +1,6 @@
-import aboutImg from "../imgs/about-img.jpg"
+import aboutImg from "../imgs/cleanlake.jpg"
 import Image from 'next/image'
+import Link from 'next/link';
 
 function HomeAbout() {
     return (
@@ -12,7 +13,7 @@ function HomeAbout() {
                 <p>
                 Experience the wonders of Lake Victoria with us. Explore breathtaking landscapes, immerse in authentic cultural encounters, and create lasting memories. Join Gopiny Experience today.
                 </p>
-                <a href="/about" className="btn">read more</a>
+                <Link href="/about" className="btn">read more</Link>
             </article>
         </section>
     )

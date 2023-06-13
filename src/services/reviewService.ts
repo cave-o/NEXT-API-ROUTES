@@ -1,9 +1,15 @@
 const BASE_URL = '/api';
 
 interface Review {
-  id: string;
+
   title: string;
   rating: number;
+  stars: number;
+  content: string;
+  name: string;
+  description: string;
+  imgUrl: string;
+  id: number;
   // Add other properties as needed
 }
 
