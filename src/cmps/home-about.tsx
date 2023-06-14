@@ -10,10 +10,7 @@ function HomeAbout() {
                     fill
                     src={aboutImg}
                     alt=""
-                    style={{
-                        maxWidth: "100%",
-                        height: "auto"
-                    }} />
+                     />
             </div>
             <article>
                 <h3>about us</h3>

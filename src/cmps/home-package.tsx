@@ -16,10 +16,7 @@ function HomePackage() {
                             src={img1}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <article>
                         <h3>Sunrise Cruise Package</h3>
@@ -36,10 +33,7 @@ function HomePackage() {
                             src={img2}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <article>
                         <h3>Kakamega Forest Exploration</h3>
@@ -56,10 +50,7 @@ function HomePackage() {
                             src={img3}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <article>
                         <h3>Ndere Island Adventure</h3>

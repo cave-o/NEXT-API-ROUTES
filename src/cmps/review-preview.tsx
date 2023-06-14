@@ -33,10 +33,7 @@ export default function ReviewPreview({ review }: ReviewPreviewProps) {
             fill
             src={review.imgUrl}
             alt=""
-            style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            />
         </div>
       </li>
     </SwiperSlide>

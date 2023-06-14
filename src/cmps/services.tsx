@@ -18,10 +18,7 @@ function Services() {
                             fill
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>adventure</h3>
                 </div>
@@ -32,10 +29,7 @@ function Services() {
                             src={icon2}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>sunrise Cruises</h3>
                 </div>
@@ -46,10 +40,7 @@ function Services() {
                             src={icon3}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>cultural tours</h3>
                 </div>
@@ -60,10 +51,7 @@ function Services() {
                             src={icon4}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>nature excursions</h3>
                 </div>
@@ -74,10 +62,7 @@ function Services() {
                             src={icon5}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>historical sites</h3>
                 </div>
@@ -88,10 +73,7 @@ function Services() {
                             src={icon6}
                             alt=""
                             sizes=""
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
+                             />
                     </div>
                     <h3>wildlife encounters</h3>
                 </div>

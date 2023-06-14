@@ -21,9 +21,7 @@ export default function TourPreview({ tour }: TourPreviewProps) {
           alt=""
           fill
           sizes="100vw"
-          style={{
-            objectFit: "cover"
-          }} />
+           />
       </div>
       <article>
         <h3>{tour.title}</h3>
