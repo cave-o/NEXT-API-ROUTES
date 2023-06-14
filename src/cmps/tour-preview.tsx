@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 
 interface ITour {
@@ -16,7 +16,14 @@ export default function TourPreview({ tour }: TourPreviewProps) {
   return (
     <li className="box" key={tour.id}>
       <div className="img-container">
-        <Image src={tour.imgUrl} alt="" layout="fill" objectFit="cover" />
+        <Image
+          src={tour.imgUrl}
+          alt=""
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
       <article>
         <h3>{tour.title}</h3>

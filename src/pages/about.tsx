@@ -1,5 +1,5 @@
 import aboutImg from "../imgs/about-img.jpg"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { faMap } from "@fortawesome/free-solid-svg-icons"
 import { faHandHoldingUsd } from "@fortawesome/free-solid-svg-icons"
 import { faHeadset } from "@fortawesome/free-solid-svg-icons"
@@ -48,7 +48,14 @@ function About() {
             </div>
             <section className="body">
                 <div className="img-container">
-                    <Image fill src={aboutImg} alt="" />
+                    <Image
+                        fill
+                        src={aboutImg}
+                        alt=""
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                 </div>
                 <article>
                     <h3>why choose us?</h3>
@@ -72,7 +79,7 @@ function About() {
                 <ReviewList reviews={reviews}/>
             </section>
         </div>
-    )
+    );
 }
 
 export default About

@@ -1,7 +1,7 @@
 import img1 from "../imgs/fam-boat-rides.jpg"
 import img2 from "../imgs/img-2.jpg"
 import img3 from "../imgs/ndere-island.jpg"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link';
 
 function HomePackage() {
@@ -11,7 +11,15 @@ function HomePackage() {
             <div className="box-container">
                 <div className="box">
                     <div className="img-container">
-                        <Image fill sizes="" src={img1} alt="" />
+                        <Image
+                            fill
+                            src={img1}
+                            alt=""
+                            sizes=""
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </div>
                     <article>
                         <h3>Sunrise Cruise Package</h3>
@@ -23,7 +31,15 @@ function HomePackage() {
                 </div>
                 <div className="box">
                     <div className="img-container">
-                        <Image fill sizes="" src={img2} alt="" />
+                        <Image
+                            fill
+                            src={img2}
+                            alt=""
+                            sizes=""
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </div>
                     <article>
                         <h3>Kakamega Forest Exploration</h3>
@@ -35,7 +51,15 @@ function HomePackage() {
                 </div>
                 <div className="box">
                     <div className="img-container">
-                        <Image fill sizes="" src={img3} alt="" />
+                        <Image
+                            fill
+                            src={img3}
+                            alt=""
+                            sizes=""
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </div>
                     <article>
                         <h3>Ndere Island Adventure</h3>
@@ -51,7 +75,7 @@ function HomePackage() {
                 <a href="package" className="btn">load more</a>
             </div>
         </section>
-    )
+    );
 }
 
 export default HomePackage

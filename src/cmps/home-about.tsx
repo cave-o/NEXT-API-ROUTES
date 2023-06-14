@@ -1,12 +1,19 @@
 import aboutImg from "../imgs/cleanlake.jpg"
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link';
 
 function HomeAbout() {
     return (
         <section className="home-about">
             <div className="img-container">
-                <Image fill src={aboutImg} alt="" />
+                <Image
+                    fill
+                    src={aboutImg}
+                    alt=""
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                    }} />
             </div>
             <article>
                 <h3>about us</h3>
@@ -16,7 +23,7 @@ function HomeAbout() {
                 <Link href="/about" className="btn">read more</Link>
             </article>
         </section>
-    )
+    );
 }
 
 export default HomeAbout

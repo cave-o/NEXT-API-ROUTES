@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { SwiperSlide } from 'swiper/react'
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 
@@ -29,7 +29,14 @@ export default function ReviewPreview({ review }: ReviewPreviewProps) {
         <h3>{review.name}</h3>
         <span>{review.description}</span>
         <div className="img-container">
-          <Image fill src={review.imgUrl} alt="" />
+          <Image
+            fill
+            src={review.imgUrl}
+            alt=""
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
       </li>
     </SwiperSlide>

@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Image from "next/legacy/image"
+import Image from "next/image"
 import ReviewPreview from './review-preview';
 
 interface IReviews {
@@ -61,7 +61,14 @@ function ReviewList({ reviews }: ReviewListProps) {
                         <h3>emma hope</h3>
                         <span>explorer</span>
                         <div className="img-container">
-                            <Image fill src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg" alt="" />
+                            <Image
+                                fill
+                                src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg"
+                                alt=""
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -79,7 +86,14 @@ function ReviewList({ reviews }: ReviewListProps) {
                         <h3>emma hope</h3>
                         <span>explorer</span>
                         <div className="img-container">
-                            <Image fill src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg" alt="" />
+                            <Image
+                                fill
+                                src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg"
+                                alt=""
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -97,7 +111,14 @@ function ReviewList({ reviews }: ReviewListProps) {
                         <h3>emma hope</h3>
                         <span>explorer</span>
                         <div className="img-container">
-                            <Image fill src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg" alt="" />
+                            <Image
+                                fill
+                                src="https://res.cloudinary.com/dslabmwf7/image/upload/v1682327860/travelagency/pic-3_tzf7mp.jpg"
+                                alt=""
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -213,7 +234,7 @@ function ReviewList({ reviews }: ReviewListProps) {
             </Swiper>
 
         </section >
-    )
+    );
 }
 
 export default ReviewList
