@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import ReviewPreview from './review-preview';
 
 interface IReviews {

@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import icon1 from '../imgs/icon-1.png'
 import icon2 from '../imgs/icon-2.png'
 import icon3 from '../imgs/icon-3.png'

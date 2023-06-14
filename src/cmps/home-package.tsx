@@ -1,7 +1,7 @@
 import img1 from "../imgs/fam-boat-rides.jpg"
 import img2 from "../imgs/img-2.jpg"
 import img3 from "../imgs/ndere-island.jpg"
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link';
 
 function HomePackage() {

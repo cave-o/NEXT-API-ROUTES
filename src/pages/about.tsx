@@ -1,5 +1,5 @@
 import aboutImg from "../imgs/about-img.jpg"
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { faMap } from "@fortawesome/free-solid-svg-icons"
 import { faHandHoldingUsd } from "@fortawesome/free-solid-svg-icons"
 import { faHeadset } from "@fortawesome/free-solid-svg-icons"
