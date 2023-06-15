@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from 'next/link';
+const Image = require("next/image");
+const Link = require("next/link");
 
-interface ITour {
+type ITour = {
   id: number;
   title: string;
   content: string;
   imgUrl: string;
-}
+};
 
 interface TourPreviewProps {
   tour: ITour;
@@ -21,7 +21,7 @@ export default function TourPreview({ tour }: TourPreviewProps) {
           alt=""
           fill
           sizes="100vw"
-           />
+        />
       </div>
       <article>
         <h3>{tour.title}</h3>
